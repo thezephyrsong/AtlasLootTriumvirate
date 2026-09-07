@@ -39,13 +39,24 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 1, 0, "INV_Box_01", "=q6=Vendors", ""};
 		{ 2, "LEGENDARIES", "Spell_Holy_ChampionsGrace", "=ds=Legendary Items", ""};
 		{ 3, "MPLUSMENU", "Spell_Holy_ProclaimChampion_02", "=ds=Mythic+", ""};
-		{ 4, "WALKOFECHOES", "spell_holy_summonchampion", "=ds=Walk of Echoes", ""};
+		{ 4, "MPLUSMENUS2", "Spell_Holy_ProclaimChampion_02", "=ds=Mythic+ Season 2", ""};
+		{ 5, "WALKOFECHOES", "spell_holy_summonchampion", "=ds=Walk of Echoes", ""};
 		{ 6, "TRANSMOG", "INV_Trinket_Naxxramas02", "=ds=Transmog", ""};
-		{ 9, 0, "INV_Box_01", "=q6=Misc", ""};
-		{ 10, "DUNGEON_QEPICSMENU", "achievement_quests_completed_06", "=ds=Dungeon Quest Epics", ""};
-		{ 11, "DONATIONSHOP1", "INV_Box_01", "=ds=Donation Shop", ""};
-		{ 16, 0, "INV_Box_01", "=q6=Tier Sets", ""};
-		{ 17, "TIER1SETS", "INV_Pants_Mail_03", "=ds=Tier 1", ""};
+		{ 10, 0, "INV_Box_01", "=q6=Tier Sets", ""};
+		{ 11, "TIER1SETS", "INV_Pants_Mail_03", "=ds=Tier 1", ""};
+		{ 12, "TIER2SETS", "INV_Pants_Mail_03", "=ds=Tier 2", ""};
+		{ 16, 0, "INV_Box_01", "=q6=ARTEFACT WEAPONS", ""};
+		{ 17, "ARTEFACT1DEFAULT", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +1 Default", ""};
+		{ 18, "ARTEFACT2DEFAULT", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +2 Default", ""};
+		{ 19, "ARTEFACT3DEFAULT", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +3 Default", ""};
+		{ 20, "ARTEFACT3RED", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +3 Red", ""};
+		{ 21, "ARTEFACT3BLUE", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +3 Blue", ""};
+		{ 22, "ARTEFACT4DEFAULT", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +4 Default", ""};
+		{ 23, "ARTEFACT4RED", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +4 Red", ""};
+		{ 24, "ARTEFACT4BLUE", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +4 Blue", ""};
+		{ 25, "ARTEFACT5DEFAULT", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +5 Default", ""};
+		{ 26, "ARTEFACT5RED", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +5 Red", ""};
+		{ 27, "ARTEFACT5BLUE", "Spell_Holy_ChampionsGrace", "=ds=Artefact Weapons +5 Blue", ""};
 	}
 
 	AtlasLoot_Data["MPLUSMENU"] = {
@@ -55,6 +66,16 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		{ 4, "MPLUSCLOTH", "Trade_Tailoring", "Cloth", ""};
 		{ 6, "MPLUSMISC", "INV_Misc_Gem_01", "Misc", ""};
 		{ 7, "MPLUSWEAPONS", "INV_Sword_1H_Blacksmithing_02", "Weapons", ""};
+		Back = "TRIUMVIRATEMENU";
+	};
+
+	AtlasLoot_Data["MPLUSMENUS2"] = {
+		{ 1, "MPLUSPLATES2", "Trade_BlackSmithing", "Plate", ""};
+		{ 2, "MPLUSMAILS2", "INV_Misc_ArmorKit_18", "Mail", ""};
+		{ 3, "MPLUSLEATHERS2", "INV_Misc_ArmorKit_17", "Leather", ""};
+		{ 4, "MPLUSCLOTHS2", "Trade_Tailoring", "Cloth", ""};
+		{ 6, "MPLUSMISCS2", "INV_Misc_Gem_01", "Misc", ""};
+		{ 7, "MPLUSWEAPONSS2", "INV_Sword_1H_Blacksmithing_02", "Weapons", ""};
 		Back = "TRIUMVIRATEMENU";
 	};
 
@@ -72,12 +93,28 @@ local BabbleZone = AtlasLoot_GetLocaleLibBabble("LibBabble-Zone-3.0")
 		Back = "TRIUMVIRATEMENU";
 	};
 
-	AtlasLoot_Data["DUNGEON_QEPICSMENU"] = {
-		{ 1, "DUNGEON_QEPICS1", "achievement_zone_westfall_01", "=ds=Classic Dungeons", ""};
-		{ 2, "DUNGEON_QEPICS5", "achievement_zone_shadowmoon", "=ds=BurningCrusade Dungeons", ""};
-		Back = "TRIUMVIRATEMENU";
-	}
-
+	AtlasLoot_Data["TIER2SETS"] = {
+		{ 2, "TIER2SETS_DKDPS", "Spell_Deathknight_DeathStrike", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DEATHKNIGHT"], "=q5="..AL["DPS"]};
+		{ 3, "TIER2SETS_DKTANK", "Spell_Deathknight_DeathStrike", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DEATHKNIGHT"], "=q5="..AL["Tanking"]};
+		{ 5, "TIER2SETS_BALANCEDRUID", "Spell_Nature_InsectSwarm", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Balance"]};
+		{ 6, "TIER2SETS_FERALDRUID", "Ability_Druid_Maul", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Feral"]};
+		{ 7, "TIER2SETS_RESTODRUID", "Spell_Nature_Regeneration", "=ds="..LOCALIZED_CLASS_NAMES_MALE["DRUID"], "=q5="..AL["Restoration"]};
+		{ 9, "TIER2SETS_HUNTER", "Ability_Hunter_RunningShot", "=ds="..LOCALIZED_CLASS_NAMES_MALE["HUNTER"], ""};
+		{ 11, "TIER2SETS_MAGE", "Spell_Frost_IceStorm", "=ds="..LOCALIZED_CLASS_NAMES_MALE["MAGE"], ""};
+		{ 13, "TIER2SETS_HOLYPALA", "Spell_Holy_HolyBolt", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "=q5="..AL["Holy"]};
+		{ 14, "TIER2SETS_PROTPALA", "Spell_Holy_SealOfMight", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "=q5="..AL["Protection"]};
+		{ 15, "TIER2SETS_RETPALA", "Spell_Holy_AuraOfLight", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PALADIN"], "=q5="..AL["Retribution"]};
+		{ 17, "TIER2SETS_HOLYPRIEST", "Spell_Holy_PowerWordShield", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "=q5="..AL["Holy"]};
+		{ 18, "TIER2SETS_SHADOWPRIEST", "Spell_Shadow_AntiShadow", "=ds="..LOCALIZED_CLASS_NAMES_MALE["PRIEST"], "=q5="..AL["Shadow"]};
+		{ 20, "TIER2SETS_ROGUE", "Ability_BackStab", "=ds="..LOCALIZED_CLASS_NAMES_MALE["ROGUE"], ""};
+		{ 22, "TIER2SETS_ELESHAM", "Spell_Nature_Lightning", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Elemental"]};
+		{ 23, "TIER2SETS_ENHSHAM", "Spell_FireResistanceTotem_01", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Enhancement"]};
+		{ 24, "TIER2SETS_RESTOSHAM", "Spell_Nature_HealingWaveGreater", "=ds="..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"], "=q5="..AL["Restoration"]};
+		{ 26, "TIER2SETS_WARLOCK", "Spell_Shadow_CurseOfTounges", "=ds="..LOCALIZED_CLASS_NAMES_MALE["WARLOCK"], ""};
+		{ 28, "TIER2SETS_DPSWARR", "Ability_Warrior_BattleShout", "=ds="..LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], "=q5="..AL["Fury"]};
+		{ 29, "TIER2SETS_PROTWARR", "INV_Shield_05", "=ds="..LOCALIZED_CLASS_NAMES_MALE["WARRIOR"], "=q5="..AL["Protection"]};
+	Back = "TRIUMVIRATEMENU";
+	};
 	-----
 	-----
 

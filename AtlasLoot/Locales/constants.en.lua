@@ -143,10 +143,20 @@ if AL then
 	AL["Mythic+ Cloth"] = true;
 	AL["Mythic+ Misc"] = true;
 	AL["Mythic+ Weapons"] = true;
+	AL["Mythic+ Season 2 Menu"] = true;
+	AL["Mythic+ Season 2 Plate"] = true;
+	AL["Mythic+ Season 2 Mail"] = true;
+	AL["Mythic+ Season 2 Leather"] = true;
+	AL["Mythic+ Season 2 Cloth"] = true;
+	AL["Mythic+ Season 2 Misc"] = true;
+	AL["Mythic+ Season 2 Weapons"] = true;
 	AL["Legendary Items"] = true;
 	AL["Walk of Echoes"] = true;
 	AL["Tier 1"] = true;
+	AL["Tier 2"] = true;
 	AL["Transmog"] = true;
+	AL["Transmog 2"] = true;
+	AL["Transmog 3"] = true;
 	AL["Tier 1 Warrior"] = true;
 	AL["Tier 1 Paladin"] = true;
 	AL["Tier 1 Hunter"] = true;
@@ -157,10 +167,19 @@ if AL then
 	AL["Tier 1 Warlock"] = true;
 	AL["Tier 1 Druid"] = true;
 	AL["Tier 1 DeathKnight"] = true;
-	AL["Dungeon Quest Epics Menu"] = true;
-	AL["Dungeon Quest Epics"] = true;
-	AL["Donation Shop"] = true;
 
+	-- Triumvirate - Artefact Weapons
+	AL["Artefact Weapons +1"] = true;
+	AL["Artefact Weapons +2"] = true;
+	AL["Artefact Weapons +3 Default"] = true;
+	AL["Artefact Weapons +3 Red"] = true;
+	AL["Artefact Weapons +3 Blue"] = true;
+	AL["Artefact Weapons +4 Default"] = true;
+	AL["Artefact Weapons +4 Red"] = true;
+	AL["Artefact Weapons +4 Blue"] = true;
+	AL["Artefact Weapons +5 Default"] = true;
+	AL["Artefact Weapons +5 Red"] = true;
+	AL["Artefact Weapons +5 Blue"] = true;
 
 
 	-- Crafting Menu
